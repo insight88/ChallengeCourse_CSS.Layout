@@ -1,0 +1,21 @@
+/*
+flex-direction의 default 값은 row
+justify-content: flex-direction이 row일 때, 가로(main axis) childeren item 배열을 조정
+align-items: flex-direction이 row일 때, 세로(cross axis) childeren item 배열을 조정
+주의 : align-items를 적용할 때, parent element의 height와 children element의 height가 달라야 적용됨
+
+*/
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: peru;
+    color: white;
+}

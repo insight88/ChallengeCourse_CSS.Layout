@@ -1,0 +1,29 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.grid {
+    color: white;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    grid-auto-flow: column;
+    grid-auto-columns: 50px;
+    /*
+    grid-auto-flow : column;
+    element의 개수가 grid-template에 지정된 개수를 초과할 때,
+    초과분의 element들이 새로운 column을 자동적으로 만들어 배치되도록 설정
+    grid-auto-flow의 default 값은 row
+    grid-auto-column : 자동적으로 column에 배치된 초과분의 element들의 크기를 설정
+    */
+}
+
+.item:nth-child(odd) {
+    background-color: #2ecc71;
+}
+
+.item:nth-child(even) {
+    background-color: #3498db;
+}

@@ -1,0 +1,28 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: peru;
+    color: white;
+    font-size: 30px;
+}
+
+.box:nth-child(2) {
+    order: 2;
+    /* 
+    모든 element의 order의 default값은 0
+    order가 낮은 것부터 나열 
+    */
+    align-self: center;
+}
+
+.box:nth-child(3) {
+    order: 1;
+    align-self: flex-end;
+}

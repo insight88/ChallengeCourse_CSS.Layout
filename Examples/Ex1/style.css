@@ -1,0 +1,37 @@
+/* 
+display: block(?)
+
+block: block은 박스, 옆에 다른 element가 배치되지 못함
+inline: block이 아님, width와 height가 적용되지 않음
+inline-block: 가로로 정렬된 block들, 하지만 default로 간격이 생김
+*/
+
+/* 
+display: flex 
+
+child elements의 direct parent element에 지정해줘야 적용됨
+*/
+
+.box {
+    background: blue;
+    width: 300px;
+    height: 300px;
+    display: block;
+    color: white;
+}
+
+.boxes {
+    background: red;
+    width: 300px;
+    height: 300px;
+    display: inline;
+    color: white;
+}
+
+.boxx {
+    background: green;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    color: white;
+}
